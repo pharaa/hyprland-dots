@@ -60,15 +60,6 @@ def other_files():
     print("Копирование .zshrc и .avatar в ~")
     os.system("cp .zshrc /home/$USER")
     os.system("cp .avatar /home/$USER")
-    print("Создаём директорию ~/.themes")
-    try:
-        os.mkdir("/home/$USER/.themes")
-    except:
-        print("Директория уже создана, пропускаем")
-        pass
-    print("Установка тем в ~/.themes")
-    os.system("sudo cp -r /usr/share/themes/catppuccin-mocha-mauve-standard+default ~/.themes")
-    os.system("sudo rm -rf /usr/share/themes")
     pass
 
 def configure_shell():
