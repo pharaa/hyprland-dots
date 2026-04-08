@@ -1,7 +1,5 @@
 ### Простые дотфайлы
 
-Дотфайлы для людей, любящих терминал больше GUI-приложений
-
 Для нормального пользования вам нужно отредактировать "config/hypr/hyprland/monitors.conf" и прописать там свои мониторы из hyprctl monitors
 
 Так-же надо изменить "config/hypr/hyprland/programs.conf" и "config/waybar/config.jsonc" и поменять там power-button на название вашей клавиатуры из hyprctl devices
@@ -20,7 +18,7 @@
 **Менюшка для выхода из сессии** Wlogout<br>
 **Демон обоев** Awww<br>
 
-### Keybinds
+### Бинды
 #
 Win + Q - Открыть терминал (alacritty)<br>
 Win + E - Открыть проводник<br>
@@ -47,7 +45,7 @@ Win + Shift + Стрелочки - Двигать окошки
 **rds** - удаление пакетов сирот<br>
 **root** - получение root-прав
 
-### Screenshots
+### Скриншоты
 #
 ![some_useless_but_beautiful_apps](screenshots/some_useless_but_beautiful_apps.png)
 
