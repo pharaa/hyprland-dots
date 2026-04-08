@@ -1,4 +1,4 @@
-hypr = "hyprland hyprlock hypridle hyprshot hyprpicker"
+hypr = "hyprland hyprlock hypridle hyprshot hyprpicker xdg-desktop-portal-hyprland"
 wl_apps = "wl-clipboard cliphist awww wlogout waybar swaync fuzzel nwg-look"
 terminals = "kitty alacritty"
 
