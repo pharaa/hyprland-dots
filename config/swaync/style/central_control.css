@@ -10,13 +10,6 @@
 
 }
 
-/* Avoid 'annoying' backgroud */
-.blank-window {  
-  background: transparent;  
-}
-  
-/* CONTROL CENTER ------------------------------------------------------------------------ */
-
 .control-center {
   background: alpha(@background, .55);
   border-radius: 20px;
@@ -26,7 +19,7 @@
   color: @text;
 }
 
-/* Notifications  */
+/* Уведомления  */
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
   background-color: @background-alt;
@@ -63,7 +56,7 @@
   background-color: @selected;
 }
 
-/* Buttons */
+/* Кнопки */
 
 .control-center .notification-row .notification-background .close-button {
   background: transparent;
@@ -91,7 +84,7 @@ progressbar {
   background-color: rgba(255,255,255,.1);
 }
 
-/* Notifications expanded-group */
+/* Ещё уведомления */
 
 .notification-group {
   margin: 2px 8px 2px 8px;
@@ -122,9 +115,9 @@ progressbar {
   background: @hover;
 }  
 
-/* WIDGETS --------------------------------------------------------------------------- */
+/* Виджеты */
 
-  /* Notification clear button */
+  /* Кнопка очистки уведомлений */
 .widget-title {
   font-size: 1.2em;
   margin: 6px;
@@ -144,7 +137,7 @@ progressbar {
   background-color: @selected;
 }
 
-  /* Do not disturb */
+  /* Режим "не беспокоить" */
 .widget-dnd {
   margin: 6px;
   font-size: 1.2rem;
@@ -174,7 +167,7 @@ progressbar {
   border-radius: 6px;
 }
 
-  /* Buttons menu */
+  /* Кнопочки сверху */
 .widget-buttons-grid {
   font-size: x-large;
   padding: 6px 2px;
@@ -195,7 +188,7 @@ progressbar {
 }
 
 
-  /* Music player */
+  /* Плеер */
 .widget-mpris {
     background: @background-alt;
     border-radius: 16px;
@@ -203,7 +196,6 @@ progressbar {
     margin:  20px 6px;
 }
 
-  /* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
 .widget-mpris-player {
     background-color: @background-sec;
     border-radius: 22px;
@@ -242,7 +234,7 @@ picture.mpris-background {
   opacity: 0;
 }
 
-/* Volume */
+/* Виджет громкости */
 .widget-volume {
   background: @background-sec;
   color: @background;
