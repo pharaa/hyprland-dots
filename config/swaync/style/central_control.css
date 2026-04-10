@@ -236,9 +236,32 @@ picture.mpris-background {
 
 /* Виджет громкости */
 .widget-volume {
-  background: @background-sec;
-  color: @background;
+  background: @background-alt;
+  color: @text;
   padding: 4px;
   margin: 6px;
   border-radius: 6px;
+}
+
+.widget-volume scale {
+  padding: 4px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.widget-volume scale trough {
+  background-color: @background;
+  min-height: 5px;
+}
+
+.widget-volume scale trough highlight {
+  background-color: @selected;
+  border-radius: 3px;
+}
+
+.widget-volume scale slider {
+  background-color: @text;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
 }
