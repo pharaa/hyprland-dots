@@ -29,19 +29,8 @@ def install_pkgs():
     print("Установка терминалов")
     os.system(f"sudo pacman -S {pkgs.terminals}")
 
-    print("Дальше на ваш выбор...")
+    print("Прочие пакеты..")
     time.sleep(3)
-    for pkg in pkgs.base:
-        os.system(f"sudo pacman -S {pkg}")
-
-    for pkg in pkgs.files:
-        os.system(f"sudo pacman -S {pkg}")
-
-    for pkg in pkgs.daily_use:
-        os.system(f"sudo pacman -S {pkg}")
-
-    for pkg in pkgs.for_devs:
-        os.system(f"sudo pacman -S {pkg}")
     
     print("Крутой плеер, скачайте пж")
     for pkg in pkgs.aur:
@@ -77,9 +66,14 @@ def configure_shell():
     os.system("chsh -s $(which zsh)")
     pass
 
+def post_installation():
+    os.system("chmod +x /home/$USER/.config/fuzzel/screenshot.sh")
+    pass
+
 if __name__ == "__main__":
     install_cfg()
     other_files()
     install_pkgs()
     configure_shell()
+    post_installation()
     print("Всё готово! Перезагрузите сессию")
