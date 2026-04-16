@@ -6,7 +6,6 @@
 
 При желании вы можете поменять аватарку на экране блокировки, переименовав картинку в .avatar и поместить её в вашу папку /home/
 #
-**ОС** CachyOS<br>
 **Основной терминал** Alacritty<br>
 **Второй терминал** Kitty<br>
 **Проводник** Ranger<br>
@@ -18,6 +17,14 @@
 **Менюшка для выхода из сессии** Wlogout<br>
 **Демон обоев** Awww<br>
 
+### Установка
+#
+```
+sudo pacman -S python # если не установлен до этого
+git clone https://github.com/pharaa/hyprland-dots.git
+cd hyprland-dots
+python builder/main.py
+```
 ### Бинды
 #
 Win + Q - Открыть терминал (alacritty)<br>
@@ -29,8 +36,11 @@ Win + C - Закрыть окно<br>
 Win + V - Переключение тайлинга для окна<br>
 
 Win + Alt + R - Открыть буфер обмена<br>
-PrintScreen - Сделать скриншот области<br>
-Alt + PrintScreen - Выбрать цвет с экрана<br>
+Win + Alt + W - Вайпнуть буфер обмена<br>
+Win + Alt + C - Открыть браузер (chromium)<br>
+Win + Alt + P - Открыть лаунчер майнкрафта (prism)<br>
+PrintScreen - Открыть меню скриншотов<br>
+Win + Alt + PrintScreen - Выбрать цвет с экрана<br>
 
 Win + Shift + Стрелочки - Двигать окошки
 
