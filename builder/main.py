@@ -85,8 +85,8 @@ def post_installation():
 if __name__ == "__main__":
     install_cfg()
     other_files()
-    install_pkgs()
     install_assets()
+    install_pkgs()
     configure_shell()
     post_installation()
     print("Всё готово! Перезагрузите сессию")
