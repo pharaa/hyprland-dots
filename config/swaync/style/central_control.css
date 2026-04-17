@@ -1,4 +1,4 @@
-@import '/home/$USER/.assets/colors.css';
+@import '~/.assets/colors.css';
 
 * {
   color: @text;
