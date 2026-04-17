@@ -1,0 +1,16 @@
+@define-color text            #cdd6f4;
+@define-color background-alt  #232332;
+@define-color selected        #89b4fa;
+@define-color hover           #89b4fa;
+@define-color urgent          #f38ba8;
+@define-color background      #1e1e2e;
+
+@define-color red       #f38ba8;
+@define-color blue      #89b4fa;
+@define-color grey      #a6adc8;
+@define-color cyan      #74c7ec;
+@define-color yellow    #f5d967;
+@define-color green     #94e2d5;
+@define-color soft-purple #b4befe;
+@define-color purple    #cba6f7;
+@define-color mint      #94e2d5;

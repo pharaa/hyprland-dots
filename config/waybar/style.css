@@ -1,3 +1,5 @@
+@import '/home/$USER/.assets/colors.css';
+
 *{
   min-width: 0;
   min-height: 0px;
@@ -9,7 +11,7 @@
 window#waybar {
   transition-property: background-color;
   transition-duration: 0s;
-  background-color: alpha(#212133, 1);
+  background-color: alpha(@background, 1);
   padding: 0rem 0.6rem;
   margin: 0.3rem 0.25rem;
   border-radius: 12px;
@@ -19,23 +21,23 @@ window#waybar {
   padding: 0rem 0.6rem;
   margin: 0.3rem 0.25rem;
   border-radius: 20px;
-  background-color: #28283D;
-  color: #cdd6f4;
+  background-color: @background-alt;
+  color: @text;
 }
 
 #workspaces button:hover {
-  background-color: #cdd6f4;
-  color: #28283d;
+  background-color: @text;
+  color: @background-alt;
 }
 
 #workspaces button.active {
-  background-color: #28283D;
-  color: #89b4fa;
+  background-color: @background-alt;
+  color: @selected;
 }
 
 #workspaces button.urgent {
-  background-color: #28283D;
-  color: #f38ba8;
+  background-color: @background-alt;
+  color: @urgent;
 }
 
 #clock,
@@ -50,27 +52,27 @@ window#waybar {
 #memory,
 #window,
 #mpris {
-  background-color: #28283D;
+  background-color: @background-alt;
   padding: 0rem 0.6rem;
   margin: 0.3rem 0.25rem;
   border-radius: 12px;
 }
 
 #mpris.playing {
-  color: #a6e3a1;
+  color: @green;
 }
 
 #mpris.paused {
-  color: #9399b2;
+  color: @grey;
 }
 
 #custom-launcher {
-  color: #00EAFF;
+  color: @cyan;
 }
 
 #custom-sep {
   padding: 0px;
-  color: #585b70;
+  color: @grey;
 }
 
 window#waybar.empty #window {
@@ -78,23 +80,23 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  color: #94e2d5;
+  color: @mint;
 }
 
 #memory {
-  color: #cba6f7;
+  color: @purple;
 }
 
 #clock {
-  color: #74c7ec;
+  color: @cyan;
 }
 
 #language {
-  color: #F5D967;
+  color: @yellow;
 }
 
 #clock.simpleclock {
-  color: #89b4fa;
+  color: @blue;
 }
 
 #window {
@@ -102,11 +104,11 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-  color: #b4befe;
+  color: @soft-purple;
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: @grey;
 }
 
 #custom-logo {
@@ -114,14 +116,14 @@ window#waybar.empty #window {
 }
 
 #custom-power {
-  color: #f38ba8;
+  color: @red;
 }
 
 tooltip {
-  background-color: #28283d;
-  border: 2px solid #89b4fa;
+  background-color: @background-alt;
+  border: 2px solid @blue;
 }
 
 #custom-notification {
-  color: #cdd6f4
+  color: @text
 }

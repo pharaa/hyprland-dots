@@ -43,6 +43,18 @@ def install_pkgs():
         os.system("sudo pacman -S nvidia-dkms nvidia-utils")
     pass
 
+def install_assets():
+    print("Создаём папку /home/$USER/.assets")
+    try:
+        os.mkdir("/home/$USER/.assets")
+    except:
+        print("Директория уже создана, пропускаем")
+        pass
+    
+    print("Установка файлов ассетов")
+    os.system("cp -r assets/icons /home/$USER/assets")
+    os.system("cp -r assets/colors.css /home/$USER/assets")
+
 def other_files():
     print("Установка пакета обоев")
     os.system("cp -r wallpapers /home/$USER")
@@ -74,6 +86,7 @@ if __name__ == "__main__":
     install_cfg()
     other_files()
     install_pkgs()
+    install_assets()
     configure_shell()
     post_installation()
     print("Всё готово! Перезагрузите сессию")
