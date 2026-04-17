@@ -63,10 +63,10 @@ button:hover {
 }
 
 #suspend {
-    background-image: image(url("/home/breakcore/.assets/icons/hibernate.png"));
+    background-image: image(url("/home/breakcore/.assets/icons/suspend.png"));
 }
 #suspend:hover {
-  background-image: image(url("/home/breakcore/.assets/icons/hibernate-hover.png"));
+  background-image: image(url("/home/breakcore/.assets/icons/suspend-hover.png"));
 }
 
 #hibernate {
