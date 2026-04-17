@@ -22,7 +22,7 @@ cd hyprland-dots
 #
 Отредактируйте "config/hypr/hyprland/monitors.conf" и пропишите там свои мониторы из hyprctl monitors<br>
 Измените "config/hypr/hyprland/programs.conf" и "config/waybar/config.jsonc" и поменяйте там power-button на название вашей клавиатуры из hyprctl devices<br>
-Измените "config/waybar/style.css", "config/swaync/style/notifications.css" и "config/swaync/style/central-control.css". В самой первой строчке с импортом поменяйте "/home/breakcore/" на "/home/<ваше имя пользователя>"
+Измените "config/waybar/style.css", "config/swaync/style/notifications.css", "config/wlogout/style.css" и "config/swaync/style/central-control.css". В строчках с импортом и путях к иконкам поменяйте "/home/breakcore/" на "/home/<ваше имя пользователя>"
 
 При желании вы можете поменять аватарку на экране блокировки, переименовав картинку в .avatar и поместить её в вашу папку /home/
 #
