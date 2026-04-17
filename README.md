@@ -1,10 +1,4 @@
 ### Простые дотфайлы
-
-Для нормального пользования вам нужно отредактировать "config/hypr/hyprland/monitors.conf" и прописать там свои мониторы из hyprctl monitors
-
-Так-же надо изменить "config/hypr/hyprland/programs.conf" и "config/waybar/config.jsonc" и поменять там power-button на название вашей клавиатуры из hyprctl devices
-
-При желании вы можете поменять аватарку на экране блокировки, переименовав картинку в .avatar и поместить её в вашу папку /home/
 #
 **Основной терминал** Alacritty<br>
 **Второй терминал** Kitty<br>
@@ -17,12 +11,23 @@
 **Менюшка для выхода из сессии** Wlogout<br>
 **Демон обоев** Awww<br>
 
+
 ### Установка
 #
 ```
 sudo pacman -S python # если не установлен до этого
 git clone https://github.com/pharaa/hyprland-dots.git
 cd hyprland-dots
+```
+#
+Отредактируйте "config/hypr/hyprland/monitors.conf" и пропишите там свои мониторы из hyprctl monitors<br>
+Измените "config/hypr/hyprland/programs.conf" и "config/waybar/config.jsonc" и поменяйте там power-button на название вашей клавиатуры из hyprctl devices<br>
+Измените "config/waybar/style.css", "config/swaync/style/notifications.css" и "config/swaync/style/central-control.css". В самой первой строчке с импортом поменяйте "/home/breakcore/" на "/home/<ваше имя пользователя>"
+
+При желании вы можете поменять аватарку на экране блокировки, переименовав картинку в .avatar и поместить её в вашу папку /home/
+#
+Запустите билдер:
+```
 python builder/main.py
 ```
 ### Бинды

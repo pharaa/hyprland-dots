@@ -1,4 +1,4 @@
-@import '~/.assets/colors.css';
+@import '/home/breakcore/.assets/colors.css';
 
 * {
   color: @text;
@@ -11,7 +11,7 @@
 }
 
 .control-center {
-  background: alpha(@background, .55);
+  background: alpha(@background, 0.78);
   border-radius: 20px;
   border: 3px solid @selected;
   margin: 18px;
