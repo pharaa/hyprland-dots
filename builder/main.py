@@ -52,8 +52,8 @@ def install_assets():
         pass
     
     print("Установка файлов ассетов")
-    os.system("cp -r assets/icons /home/$USER/assets")
-    os.system("cp -r assets/colors.css /home/$USER/assets")
+    os.system("cp -r assets/icons /home/$USER/.assets")
+    os.system("cp assets/colors.css /home/$USER/.assets")
 
 def other_files():
     print("Установка пакета обоев")
