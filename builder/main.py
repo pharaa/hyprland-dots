@@ -22,19 +22,23 @@ def install_cfg():
     pass
 
 def install_pkgs():
+    print("Установка базовых пакетов")
+    os.system(f"sudo pacman -S {pkgs.base}")
     print("Установка пакетов hyprland")
     os.system(f"sudo pacman -S {pkgs.hypr}")
     print("Установка прочих элементов окружения")
     os.system(f"sudo pacman -S {pkgs.wl_apps}")
     print("Установка терминалов")
     os.system(f"sudo pacman -S {pkgs.terminals}")
-
+    print("Установка пакетов шелла")
+    os.system(f"sudo pacman -S {pkgs.shell}")
     print("Прочие пакеты..")
     time.sleep(3)
+    os.system(f"sudo pacman -S {pkgs.files}")
+    os.system(f"sudo pacman -S {pkgs.daily_use}")
+    os.system(f"sudo pacman -S {pkgs.for_devs}")
     
-    print("Крутой плеер, скачайте пж")
-    for pkg in pkgs.aur:
-        os.system(f"yay -S {pkg}")
+    os.system(f"yay -S {pkgs.aur}")
     
     choice = input("Вам нужны драйвера Nvidia? [Y/n] >")
     if choice == "n" or "N":
@@ -71,7 +75,6 @@ def configure_shell():
     os.system('git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"')
 
     print("Копирование файлов конфигурации zsh")
-    os.system("cp -r .oh-my-zsh /home/$USER")
     os.system("cp .p10k.zsh .oh-my-zsh /home/$USER")
     os.system("cp .zshrc /home/$USER")
     print("Установка zsh как шелла по умолчанию")
