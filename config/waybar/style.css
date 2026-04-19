@@ -1,0 +1,121 @@
+@import '../../.assets/colors.css';
+
+*{
+  min-width: 0;
+  min-height: 0px;
+  font-family: "JetBrainsMono NFP";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  transition-property: background-color;
+  transition-duration: 0s;
+  background-color: alpha(@background, 1);
+  padding: 0rem 0.6rem;
+  margin: 0.3rem 0.25rem;
+  border-radius: 12px;
+}
+
+#workspaces button {
+  padding: 0rem 0.6rem;
+  margin: 0.3rem 0.25rem;
+  border-radius: 20px;
+  background-color: @background-alt;
+  color: @text;
+}
+
+#workspaces button:hover {
+  background-color: @text;
+  color: @background-alt;
+}
+
+#workspaces button.active {
+  background-color: @background-alt;
+  color: @blue;
+}
+
+#workspaces button.urgent {
+  background-color: @background-alt;
+  color: @red;
+}
+
+#clock,
+#language,
+#custom-launcher,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-notification,
+#cpu,
+#tray,
+#memory,
+#window,
+#mpris {
+  background-color: @background-alt;
+  padding: 0rem 0.6rem;
+  margin: 0.3rem 0.25rem;
+  border-radius: 12px;
+}
+
+#mpris.playing {
+  color: @green;
+}
+
+#mpris.paused {
+  color: @surface1;
+}
+
+#custom-launcher {
+  color: @sapphire;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: @surface2;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#cpu {
+  color: @teal;
+}
+
+#memory {
+  color: @mauve;
+}
+
+#clock {
+  color: @sky;
+}
+
+#language {
+  color: @yellow;
+}
+
+#window {
+  color: #ffffff;
+}
+
+#pulseaudio {
+  color: @lavender;
+}
+
+#pulseaudio.muted {
+  color: @surface1;
+}
+
+#custom-power {
+  color: @red;
+}
+
+tooltip {
+  background-color: @background-alt;
+  border: 2px solid @blue;
+}
+
+#custom-notification {
+  color: @peach;
+}

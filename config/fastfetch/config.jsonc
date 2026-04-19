@@ -1,0 +1,95 @@
+{
+    "logo": {
+	"color": {
+	    "1": "blue"
+	},
+    	"source": "~/.config/fastfetch/logo.txt",
+    	"type": "auto",
+    	"height": 1,
+    	"padding": {
+    		"top": 0,
+		"left": 0,
+		"right": 3
+    	}
+    },
+    "display": {
+	"separator": " ",
+	"color": {
+	    "title": "white"
+    	}
+    },
+    "modules": [
+	"break",
+	{
+            "type": "custom",
+            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+        },
+        "break",
+	{
+	    "type":"title",
+	    "key": " ",
+	    "keyColor": "34"
+	},
+	"break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "34"
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "34"
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "34"
+        },
+	"break",
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "34"
+        },
+        {
+	    "type": "shell",
+	    "key": "󰆍 ",
+	    "keyColor": "34"
+	},
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "34" 
+        },
+	"break",
+        {
+            "type": "cpu",
+            "key": " ",
+            "keyColor": "34"
+        },
+        {
+            "type": "gpu",
+            "key": " ",
+            "keyColor": "34"
+        },
+        {
+            "type": "memory",
+            "key": " ",
+            "keyColor": "34"
+        },
+	"break",
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "34"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+        },
+	"break"
+    ]
+}

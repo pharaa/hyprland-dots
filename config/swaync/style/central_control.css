@@ -1,0 +1,264 @@
+@import '../../../.assets/colors.css';
+
+* {
+  color: @text;
+
+  all: unset;
+  font-size: 14px;
+  font-family: "JetBrainsMono NF";
+  transition: 200ms;
+
+}
+
+.control-center {
+  background: alpha(@background, 1);
+  border-radius: 20px;
+  border: 3px solid @selected;
+  margin: 18px;
+  padding: 12px;
+  color: @text;
+}
+
+/* Уведомления  */
+.control-center .notification-row .notification-background,
+.control-center .notification-row .notification-background .notification.critical {
+  background-color: @background-alt;
+  border-radius: 16px;
+  margin: 4px 0px;
+  padding: 4px;
+}
+
+.control-center .notification-row .notification-background .notification.critical {
+  color: @red;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content {
+  margin: 6px;
+  padding: 8px 6px 2px 2px;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * {
+  min-height: 3.4em;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
+  background: alpha(@blue, .6);
+  color: @text;
+  border-radius: 12px;
+  margin: 6px;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+  background: @blue;
+}
+
+.control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
+  background-color: @blue;
+}
+
+/* Кнопки */
+
+.control-center .notification-row .notification-background .close-button {
+  background: transparent;
+  border-radius: 6px;
+  color: @text;
+  margin: 0px;
+  padding: 4px;
+}
+
+.control-center .notification-row .notification-background .close-button:hover {
+  background-color: @red;
+}
+
+.control-center .notification-row .notification-background .close-button:active {
+  background-color: @red;
+}
+
+progressbar,
+progress,
+trough {
+  border-radius: 12px;
+}
+
+progressbar {
+  background-color: rgba(255,255,255,.1);
+}
+
+/* Ещё уведомления */
+
+.notification-group {
+  margin: 2px 8px 2px 8px;
+
+}
+.notification-group-headers {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: @text;
+  letter-spacing: 2px;
+}
+
+.notification-group-icon {
+  color: @text;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+  background: transparent;
+  color: @text;
+  margin: 4px; 
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+  background: @maroon;
+}  
+
+/* Виджеты */
+
+  /* Кнопка очистки уведомлений */
+.widget-title {
+  color: @teal;
+  font-size: 1.2em;
+  margin: 6px;
+}
+
+.widget-title button {
+  background: @background-alt;
+  border-radius: 6px;
+  padding: 4px 16px;
+}
+
+.widget-title button:hover {
+  background-color: @surface1;
+}
+
+.widget-title button:active {
+  background-color: @surface1;
+}
+
+  /* Режим "не беспокоить" */
+.widget-dnd {
+  color: @maroon;
+  margin: 6px;
+  font-size: 1.2rem;
+}
+
+.widget-dnd > switch {
+  background: @background-alt;
+  font-size: initial;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.widget-dnd > switch:checked {
+  background: @maroon;
+}
+
+.widget-dnd > switch slider {
+  background: @text;
+  border-radius: 6px;
+}
+
+  /* Кнопочки сверху */
+.widget-buttons-grid {
+  color: @sapphire;
+  font-size: x-large;
+  padding: 6px 2px;
+  margin: 6px;
+  border-radius: 12px;
+  background: @background-alt;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+  margin: 4px 10px;
+  padding: 6px 12px;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: @surface1;
+}
+
+
+  /* Плеер */
+.widget-mpris {
+    background: @background-alt;
+    border-radius: 16px;
+    color: @text;
+    margin:  20px 6px;
+}
+
+.widget-mpris-player {
+    background-color: @background-alt;
+    border-radius: 22px;
+    padding: 6px 14px;
+    margin: 6px;
+    color: @mauve;
+}
+
+.widget-mpris > box > button {
+  color: @mauve;
+  border-radius: 20px;
+}
+ 
+.widget-mpris button {
+  color: alpha(@mauve, .6);
+}
+
+.widget-mpris button:hover {
+  color: @mauve;
+}
+
+.widget-mpris-album-art {
+  border-radius: 16px;
+}
+ 
+.widget-mpris-title {
+    color: @mauve;
+    font-weight: 700;
+    font-size: 1rem;
+}
+ 
+.widget-mpris-subtitle {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+picture.mpris-background {
+  opacity: 0;
+}
+
+/* Виджет громкости */
+.widget-volume {
+  background: @background-alt;
+  color: @text;
+  padding: 4px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.widget-volume scale {
+  padding: 4px;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+.widget-volume scale trough {
+  background-color: @background;
+  min-height: 5px;
+}
+
+.widget-volume scale trough highlight {
+  background-color: @sapphire;
+  border-radius: 3px;
+}
+
+.widget-volume scale slider {
+  background-color: @text;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+}
