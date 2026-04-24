@@ -29,7 +29,7 @@ def install_pkgs():
     print("Установка прочих элементов окружения")
     os.system(f"sudo pacman -S {pkgs.wl_apps}")
     print("Установка терминалов")
-    os.system(f"sudo pacman -S {pkgs.terminals}")
+    os.system(f"sudo pacman -S {pkgs.terminals_and_tui}")
     print("Установка пакетов шелла")
     os.system(f"sudo pacman -S {pkgs.shell}")
     print("Прочие пакеты..")
