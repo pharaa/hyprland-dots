@@ -15,18 +15,15 @@
 ### Установка
 #
 ```
-sudo pacman -S python # если не установлен до этого
 git clone https://github.com/pharaa/hyprland-dots.git
 cd hyprland-dots
 ```
-#
+
 Отредактируйте "config/hypr/hyprland/monitors.conf" и пропишите там свои мониторы из hyprctl monitors<br>
 
-Измените "config/hypr/hyprland/programs.conf" и "config/waybar/config.jsonc" и поменяйте там power-button на название вашей клавиатуры из hyprctl devices<br>
-
 При желании вы можете поменять аватарку на экране блокировки, переименовав картинку в .avatar и поместить её в вашу папку /home/
-#
-Запустите билдер:
+
+#### Запустите билдер:
 ```
 python builder/main.py
 ```
