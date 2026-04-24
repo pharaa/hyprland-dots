@@ -41,7 +41,9 @@ Win + Alt + R - Открыть буфер обмена<br>
 Win + Alt + W - Вайпнуть буфер обмена<br>
 Win + Alt + C - Открыть браузер (chromium)<br>
 Win + Alt + P - Открыть лаунчер майнкрафта (prism)<br>
+
 PrintScreen - Открыть меню скриншотов<br>
+Win + PrintScreen - Быстрый скриншот области<br>
 Win + Alt + PrintScreen - Выбрать цвет с экрана<br>
 
 Win + Shift + Стрелочки - Двигать окошки
