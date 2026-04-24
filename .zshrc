@@ -17,6 +17,8 @@ zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
 
 alias rscfg='killall waybar && hyprctl dispatch exec waybar && hyprctl reload && swaync-client --reload-config --reload-css'
 alias root='sudo su'
+alias cat='bat'
+alias ls='lsd'
 alias uwu='clear && uwufetch'
 alias ff='fastfetch'
 alias cls='clear && fastfetch'
