@@ -18,7 +18,7 @@
 
 .floating-notifications.background .notification-row .notification-background {
   background: alpha(@background, 1);
-  border: 3px solid @selected;
+  border: 3px solid @blue;
   border-radius: 20px;
   margin: 16px;
   padding: 0;
