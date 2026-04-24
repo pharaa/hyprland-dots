@@ -33,8 +33,6 @@
   },
   "hyprland/language": {
     "format":"󰌌 {short} {variant}",
-    // !!!ПОМЕНЯТЬ power-button НА НАЗВАНИЕ ВАШЕЙ КЛАВИАТУРЫ В hyprctl devices!!!
-    "on-click": "hyprctl switchxkblayout power-button next",
     "tooltip": false
   },
   "mpris": {
