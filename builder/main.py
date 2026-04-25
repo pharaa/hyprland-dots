@@ -1,6 +1,5 @@
-import configs
+from lists import configs, pkgs
 import requests
-import pkgs
 import time
 import os
 
