@@ -15,3 +15,5 @@ icons = [
     "themes/fairywren",
     "themes/Moga-Neon-Sky"
 ]
+
+extra = "extra"
