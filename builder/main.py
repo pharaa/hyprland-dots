@@ -18,6 +18,17 @@ def install_cfg():
     print("Копируем иконки в ~/.icons")
     for icon in configs.icons:
         os.system(f"cp -r {icon} /home/$USER/.icons")
+
+    print("Создаём директорию ~/.extra")
+    try:
+        os.mkdir("/home/$USER/.extra")
+    except:
+        print("Директория уже создана, пропускаем")
+        pass
+
+    print("Копируем дополнительные файлы в ~/.extra")
+    for file in os.listdir(configs.extra):
+        os.system(f"cp extra/{file} /home/$USER/.extra")
     pass
 
 def install_pkgs():
