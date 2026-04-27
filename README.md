@@ -37,9 +37,11 @@ Win + H - Открыть htop<br>
 Win + C - Закрыть окно<br>
 Win + V - Переключение тайлинга для окна<br>
 
+Win + Alt + D - Открыть дискорд<br>
 Win + Alt + R - Открыть буфер обмена<br>
 Win + Alt + W - Вайпнуть буфер обмена<br>
 Win + Alt + C - Открыть браузер (chromium)<br>
+Win + Alt + N - Открыть менюшку выбора обоев<br>
 Win + Alt + P - Открыть лаунчер майнкрафта (prism)<br>
 
 PrintScreen - Открыть меню скриншотов<br>
@@ -62,6 +64,6 @@ Win + Shift + Стрелочки - Двигать окошки
 
 ### Скриншоты
 #
-![some_useless_but_beautiful_apps](screenshots/some_useless_but_beautiful_apps.png)
+![some_useless_but_beautiful_apps](screenshots/overview.png)
 
-![some_cli](screenshots/some_cli.png)
+![some_cli](screenshots/cli_tools.png)
