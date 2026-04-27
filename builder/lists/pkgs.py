@@ -1,5 +1,5 @@
 hypr = "hyprland hyprlock hypridle hyprshot hyprpicker xdg-desktop-portal-hyprland"
-wl_apps = "wl-clipboard cliphist awww wlogout waybar swaync fuzzel nwg-look waypaper"
+wl_apps = "wl-clipboard cliphist awww wlogout waybar swaync fuzzel nwg-look waypaper quickshell"
 terminals_and_tui = "kitty alacritty htop nvtop cava fastfetch uwufetch ranger"
 base = "pipewire pipewire-pulse alsa-utils pipewire-alsa pavucontrol ttf-jetbrains-mono-nerd brightnessctl dbus yay"
 shell = "zsh zsh-autosuggestions zsh-syntax-highlighting"
