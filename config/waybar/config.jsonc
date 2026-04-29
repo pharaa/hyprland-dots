@@ -11,10 +11,11 @@
   "fixed-center": true,
   "modules-left": [
 	"custom/launcher",
-	"mpris"
+  "hyprland/workspaces",
+  "hyprland/window"
   ],
   "modules-center": [
-	"hyprland/workspaces"
+    "mpris"
   ],
   "modules-right": [
     "cpu",
@@ -43,19 +44,27 @@
     "max-length": 60,
     "ellipsis": "...",
     "status-icons": {
-      "paused": ""
+      "paused": ""
     },
     "player-icons": {
-      "default": ""
+      "default": ""
     }
   },
   "hyprland/workspaces": {
     "on-click": "activate",
-    "format": "{id}",
+    "format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"default": ""
+		},
     "all-outputs": true,
     "disable-scroll": false,
     "active-only": false
   },
+  "hyprland/window": {
+		"format": "{class}",
+		"separate-outputs": false
+	},
   "tray": {
     "show-passive-items": true,
     "spacing": 10
@@ -66,16 +75,16 @@
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
-        "months": "<span color='#ffffff'><b>{}</b></span>",
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
         "today": "<span color='#f38ba8' weight='700'><u>{}</u></span>",
-        "weekdays": "<span color='#ffffff'><b>{}</b></span>",
-        "weeks": "<span color='#ffffff'><b>W{}</b></span>"
+        "weekdays": "<span color='#cdd6f4'><b>{}</b></span>",
+        "weeks": "<span color='#cdd6f4'><b>W{}</b></span>"
       },
       "mode": "month",
       "mode-mon-col": 1,
       "on-scroll": 1
     },
-    "tooltip-format": "<span color='#ffffff' font='JetBrainsMono NFP 15'><tt><small>{calendar}</small></tt></span>"
+    "tooltip-format": "<span color='#cdd6f4' font='JetBrainsMono NFP 15'><tt><small>{calendar}</small></tt></span>"
   },
   "cpu": {
     "format": " {usage}%",
