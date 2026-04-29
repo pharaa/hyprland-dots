@@ -1,5 +1,6 @@
 @import '../../.assets/colors.css';
 
+/* Основное окно панельки */
 *{
   min-width: 0;
   min-height: 0px;
@@ -17,6 +18,7 @@ window#waybar {
   border-radius: 12px;
 }
 
+/* Рабочие столы */
 #workspaces {
   padding: 0rem 0.6rem;
   margin: 0.3rem 0.25rem;
@@ -40,18 +42,20 @@ window#waybar {
   color: @red;
 }
 
-#clock,
-#language,
+/* Остальные виджеты */
 #custom-launcher,
-#pulseaudio,
-#custom-logo,
-#custom-power,
-#custom-notification,
-#cpu,
-#tray,
-#memory,
 #window,
-#mpris {
+
+#mpris,
+
+#cpu,
+#memory,
+#pulseaudio,
+#language,
+#clock,
+#tray,
+#custom-notification,
+#custom-power {
   background-color: @background-alt;
   padding: 0rem 0.6rem;
   margin: 0.3rem 0.25rem;
