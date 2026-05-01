@@ -1,3 +1,3 @@
 #!/usr/bin/bash
-cd ~/.extra
+cd ~/.extra/wallpaper_picker
 quickshell -p wallpaper_picker.qml
