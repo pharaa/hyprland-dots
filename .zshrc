@@ -15,6 +15,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*:*:*:*:descriptions' format '%F{green}-- %d --%f'
 
+alias vencord='sh -c "$(curl -sS https://vencord.dev/install.sh)"'
 alias rscfg='killall waybar && hyprctl dispatch exec waybar && hyprctl reload && swaync-client --reload-config --reload-css'
 alias root='sudo su'
 alias cat='bat'
