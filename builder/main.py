@@ -28,7 +28,10 @@ def install_cfg():
 
     print("Копируем дополнительные файлы в ~/.extra")
     for file in os.listdir(configs.extra):
-        os.system(f"cp extra/{file} /home/$USER/.extra")
+        try:
+            os.system(f"cp extra/{file} /home/$USER/.extra")
+        except:
+            os.system(f"cp -r extra/{file} /home/$USER/.extra")
     pass
 
 def install_pkgs():
