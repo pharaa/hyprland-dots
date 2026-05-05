@@ -1,15 +1,9 @@
+from funcs import create_dirs
 from lists import configs, pkgs
-import requests
 import time
 import os
 
 def install_cfg():
-    print("Создаём директорию ~/.icons")
-    try:
-        os.mkdir("/home/$USER/.icons")
-    except:
-        print("Директория уже создана, пропускаем")
-        pass
     
     print("Копируем конфиги в ~/.config")
     for cfg in configs.cfg_list:
@@ -18,13 +12,6 @@ def install_cfg():
     print("Копируем иконки в ~/.icons")
     for icon in configs.icons:
         os.system(f"cp -r {icon} /home/$USER/.icons")
-
-    print("Создаём директорию ~/.extra")
-    try:
-        os.mkdir("/home/$USER/.extra")
-    except:
-        print("Директория уже создана, пропускаем")
-        pass
 
     print("Копируем дополнительные файлы в ~/.extra")
     for file in configs.extra:
@@ -55,13 +42,6 @@ def install_pkgs():
     os.system(f"yay -S {pkgs.aur}")
 
 def install_assets():
-    print("Создаём папку /home/$USER/.assets")
-    try:
-        os.mkdir("/home/$USER/.assets")
-    except:
-        print("Директория уже создана, пропускаем")
-        pass
-    
     print("Установка файлов ассетов")
     os.system("cp -r assets/color_schemes /home/$USER/.assets")
     os.system("cp -r assets/icons /home/$USER/.assets")
