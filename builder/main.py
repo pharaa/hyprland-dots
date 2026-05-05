@@ -4,6 +4,11 @@ from lists import configs, pkgs
 import time
 import os
 
+def install_yay():
+    print("Установка yay...")
+    os.system("git clone https://aur.archlinux.org/yay.git && cd yay")
+    os.system("makepkg -si")
+
 def install_pkgs():
     print("Установка базовых пакетов")
     os.system(f"sudo pacman -S {pkgs.base}")
@@ -60,6 +65,7 @@ if __name__ == "__main__":
     install_wallpapers()
     install_avatar()
     
+    install_yay()
     install_pkgs()
     configure_shell()
     post_installation()
