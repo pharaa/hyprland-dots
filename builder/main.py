@@ -29,8 +29,12 @@ def install_pkgs():
     os.system(f"yay -S {pkgs.aur}")
 
 def configure_shell():
-    print("Установка oh my zsh")
+    print("Установка oh my zsh (после установки напишите exit)")
     os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
+    
+    print("Установка плагинов zsh")
+    os.system("git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions")
+    os.system("git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting")
 
     print("Установка темы PowerLevel10k")
     os.system('git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"')
