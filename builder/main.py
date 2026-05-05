@@ -27,24 +27,25 @@ def install_cfg():
         pass
 
     print("Копируем дополнительные файлы в ~/.extra")
-    for file in os.listdir(configs.extra):
-        try:
-            os.system(f"cp extra/{file} /home/$USER/.extra")
-        except:
-            os.system(f"cp -r extra/{file} /home/$USER/.extra")
-    pass
+    for file in configs.extra:
+        os.system(f"cp -r extra/{file} /home/$USER/.extra")
 
 def install_pkgs():
     print("Установка базовых пакетов")
     os.system(f"sudo pacman -S {pkgs.base}")
+    
     print("Установка пакетов hyprland")
     os.system(f"sudo pacman -S {pkgs.hypr}")
+    
     print("Установка прочих элементов окружения")
     os.system(f"sudo pacman -S {pkgs.wl_apps}")
+    
     print("Установка терминалов")
     os.system(f"sudo pacman -S {pkgs.terminals_and_tui}")
+    
     print("Установка пакетов шелла")
     os.system(f"sudo pacman -S {pkgs.shell}")
+    
     print("Прочие пакеты..")
     time.sleep(3)
     os.system(f"sudo pacman -S {pkgs.files}")
@@ -52,13 +53,6 @@ def install_pkgs():
     os.system(f"sudo pacman -S {pkgs.for_devs}")
     
     os.system(f"yay -S {pkgs.aur}")
-    
-    choice = input("Вам нужны драйвера Nvidia? [Y/n] >")
-    if choice == "n" or "N":
-        pass
-    else:
-        os.system("sudo pacman -S nvidia-dkms nvidia-utils")
-    pass
 
 def install_assets():
     print("Создаём папку /home/$USER/.assets")
@@ -69,6 +63,7 @@ def install_assets():
         pass
     
     print("Установка файлов ассетов")
+    os.system("cp -r assets/color_schemes /home/$USER/.assets")
     os.system("cp -r assets/icons /home/$USER/.assets")
     os.system("cp assets/colors.css /home/$USER/.assets")
 

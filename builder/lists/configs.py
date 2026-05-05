@@ -13,7 +13,9 @@ cfg_list = [
 
 icons = [
     "themes/fairywren",
-    "themes/Moga-Neon-Sky"
+    "themes/moga"
 ]
 
-extra = "extra"
+extra = [
+    "wallpaper_picker"
+]
