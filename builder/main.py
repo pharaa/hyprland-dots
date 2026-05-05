@@ -1,21 +1,8 @@
+from funcs.install_files import *
 from funcs import create_dirs
 from lists import configs, pkgs
 import time
 import os
-
-def install_cfg():
-    
-    print("Копируем конфиги в ~/.config")
-    for cfg in configs.cfg_list:
-        os.system(f"cp -r {cfg} /home/$USER/.config")
-    
-    print("Копируем иконки в ~/.icons")
-    for icon in configs.icons:
-        os.system(f"cp -r {icon} /home/$USER/.icons")
-
-    print("Копируем дополнительные файлы в ~/.extra")
-    for file in configs.extra:
-        os.system(f"cp -r extra/{file} /home/$USER/.extra")
 
 def install_pkgs():
     print("Установка базовых пакетов")
@@ -41,20 +28,6 @@ def install_pkgs():
     
     os.system(f"yay -S {pkgs.aur}")
 
-def install_assets():
-    print("Установка файлов ассетов")
-    os.system("cp -r assets/color_schemes /home/$USER/.assets")
-    os.system("cp -r assets/icons /home/$USER/.assets")
-    os.system("cp assets/colors.css /home/$USER/.assets")
-
-def other_files():
-    print("Установка пакета обоев")
-    os.system("cp -r wallpapers /home/$USER")
-    print("Копирование .zshrc и .avatar в ~")
-    os.system("cp .zshrc /home/$USER")
-    os.system("cp .avatar /home/$USER")
-    pass
-
 def configure_shell():
     print("Установка oh my zsh")
     os.system('sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
@@ -74,9 +47,15 @@ def post_installation():
     pass
 
 if __name__ == "__main__":
+    create_dirs.create_dirs()
+    
     install_cfg()
-    other_files()
+    install_icons()
+    install_extra()
     install_assets()
+    install_wallpapers()
+    install_avatar()
+    
     install_pkgs()
     configure_shell()
     post_installation()
