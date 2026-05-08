@@ -1,9 +1,14 @@
 {
     "logo": {
 	"color": {
-	    "1": "blue"
+	    "1": "blue",
+        "2": "blue",
+	    "3": "blue",
+        "4": "blue",
+	    "5": "blue",
+        "6": "blue"
 	},
-    	"source": "~/.config/fastfetch/logo.txt",
+    	"source": "auto",
     	"type": "auto",
     	"height": 1,
     	"padding": {
