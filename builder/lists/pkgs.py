@@ -1,7 +1,7 @@
 hypr = "hyprland hyprlock hypridle hyprshot hyprpicker xdg-desktop-portal-hyprland"
 wl_apps = "wl-clipboard cliphist awww waybar swaync fuzzel nwg-look waypaper quickshell qt5-wayland qt6-wayland grim"
 terminals_and_tui = "kitty alacritty htop nvtop cava fastfetch uwufetch ranger"
-base = "pipewire pipewire-pulse alsa-utils pipewire-alsa pavucontrol ttf-jetbrains-mono-nerd noto-fonts brightnessctl dbus wireplumber"
+base = "pipewire pipewire-pulse alsa-utils pipewire-alsa pavucontrol ttf-jetbrains-mono-nerd noto-fonts noto-fonts-emoji brightnessctl dbus wireplumber gvfs gvfs-mtp"
 shell = "zsh"
 files = "feh vlc krita libreoffice-fresh shotcut"
 daily_use = "steam chromium torbrowser-launcher obs-studio discord telegram-desktop kiwix-desktop virtualbox nemo blueman prismlauncher"
