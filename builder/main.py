@@ -33,6 +33,7 @@ def post_installation():
     pass
 
 if __name__ == "__main__":
+    choice = input("Вам нужны драйвера Nvidia 580xx? [y/N] > ")
     create_dirs.create_dirs()
     
     install_cfg()
@@ -43,7 +44,14 @@ if __name__ == "__main__":
     install_avatar()
     
     install_pacman_pkg(pkgs.pacman_pkgs)
+    install_yay()
     install_yay_pkg(pkgs.aur_pkgs)
+    
+    if choice == "y" or "Y":
+        install_yay_pkg(pkgs.ancient_drivers)
+    else:
+        pass
+    
     configure_shell()
     post_installation()
     print("Всё готово! Перезагрузите сессию")
