@@ -37,8 +37,11 @@ window#waybar {
 	color: @blue;
 }
 
+#workspaces button.active {
+  color: @blue;
+}
+
 #workspaces button.urgent {
-  background-color: @background-alt;
   color: @red;
 }
 

@@ -56,11 +56,7 @@
   /* Рабочие столы */
   "hyprland/workspaces": {
     "on-click": "activate",
-    "format": "{icon}",
-		"format-icons": {
-			"active": "",
-			"default": ""
-		},
+    "format": "{id}",
     "all-outputs": true,
     "disable-scroll": false,
     "active-only": false
