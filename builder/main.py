@@ -1,4 +1,5 @@
 from funcs.install_files import *
+from funcs.install_pkgs import *
 from funcs import create_dirs
 from lists import configs, pkgs
 import time
@@ -8,30 +9,6 @@ def install_yay():
     print("Установка yay...")
     os.system("git clone https://aur.archlinux.org/yay.git && cd yay")
     os.system("makepkg -si")
-
-def install_pkgs():
-    print("Установка базовых пакетов")
-    os.system(f"sudo pacman -S {pkgs.base}")
-    
-    print("Установка пакетов hyprland")
-    os.system(f"sudo pacman -S {pkgs.hypr}")
-    
-    print("Установка прочих элементов окружения")
-    os.system(f"sudo pacman -S {pkgs.wl_apps}")
-    
-    print("Установка терминалов")
-    os.system(f"sudo pacman -S {pkgs.terminals_and_tui}")
-    
-    print("Установка пакетов шелла")
-    os.system(f"sudo pacman -S {pkgs.shell}")
-    
-    print("Прочие пакеты..")
-    time.sleep(3)
-    os.system(f"sudo pacman -S {pkgs.files}")
-    os.system(f"sudo pacman -S {pkgs.daily_use}")
-    os.system(f"sudo pacman -S {pkgs.for_devs}")
-    
-    os.system(f"yay -S {pkgs.aur}")
 
 def configure_shell():
     print("Установка oh my zsh (после установки напишите exit)")
@@ -65,8 +42,8 @@ if __name__ == "__main__":
     install_wallpapers()
     install_avatar()
     
-    install_yay()
-    install_pkgs()
+    install_pacman_pkg(pkgs.pacman_pkgs)
+    install_yay_pkg(pkgs.aur_pkgs)
     configure_shell()
     post_installation()
     print("Всё готово! Перезагрузите сессию")
