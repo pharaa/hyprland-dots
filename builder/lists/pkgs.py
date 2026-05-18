@@ -45,6 +45,7 @@ pacman_pkgs = [
     "htop",
     "ranger",
     "cava",
+    "kew",
     
     # звук и прочее жизненно-важное
     "pipewire",
@@ -80,10 +81,13 @@ pacman_pkgs = [
     "virtualbox",
     "prismlauncher",
     "obs-studio",
+    "nemo",
     
     # для разрабов
     "gcc",
     "clang",
+    "cmake",
+    "base-devel",
     "make",
     "automake",
     "jdk21-openjdk",
@@ -101,6 +105,11 @@ aur_pkgs = [
     "vscodium", # редактор
     "catppuccin-gtk-theme-mocha", # тема GTK
     "amneziavpn-bin" # впн-клиент
+    
+    # приколюхи
+    "cmatrix",
+    "pipes.sh",
+    "tty-clock"
 ]
 
 # нвидиа драйвера на gtx 10 серии
