@@ -1,3 +1,4 @@
+require("programs")
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
