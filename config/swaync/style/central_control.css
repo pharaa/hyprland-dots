@@ -112,7 +112,7 @@ progressbar {
 
 .notification-group-collapse-button:hover,
 .notification-group-close-all-button:hover {
-  background: @maroon;
+  background: @red;
 }  
 
 /* Виджеты */
@@ -151,7 +151,7 @@ progressbar {
 }
 
 .widget-dnd > switch:checked {
-  background: @maroon;
+  background: @blue;
 }
 
 .widget-dnd > switch slider {
@@ -161,7 +161,7 @@ progressbar {
 
   /* Кнопочки сверху */
 .widget-buttons-grid {
-  color: @sapphire;
+  color: @blue;
   font-size: x-large;
   padding: 6px 2px;
   margin: 6px;
@@ -194,20 +194,20 @@ progressbar {
     border-radius: 22px;
     padding: 6px 14px;
     margin: 6px;
-    color: @mauve;
+    color: @blue;
 }
 
 .widget-mpris > box > button {
-  color: @mauve;
+  color: @blue;
   border-radius: 20px;
 }
  
 .widget-mpris button {
-  color: alpha(@mauve, .6);
+  color: alpha(@blue, .6);
 }
 
 .widget-mpris button:hover {
-  color: @mauve;
+  color: @blue;
 }
 
 .widget-mpris-album-art {
@@ -215,7 +215,7 @@ progressbar {
 }
  
 .widget-mpris-title {
-    color: @mauve;
+    color: @blue;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -250,7 +250,7 @@ picture.mpris-background {
 }
 
 .widget-volume scale trough highlight {
-  background-color: @sapphire;
+  background-color: @blue;
   border-radius: 3px;
 }
 
