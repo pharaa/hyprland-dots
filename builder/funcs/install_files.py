@@ -1,4 +1,5 @@
 import os
+from lists import configs
 
 def install_cfg():
     print("Копируем конфиги в ~/.config")
