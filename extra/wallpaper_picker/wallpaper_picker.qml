@@ -149,42 +149,20 @@ ShellRoot {
                                 id: card
                                 anchors.fill: parent
                                 anchors.margins: 8
+                                Layout.fillWidth: true
+                                Layout.fillHeight: true
                                 radius: 15
-                                color: hovered ? "#181825" : "#181825"
-                                border.color: hovered ? "transparent" : "transparent"
-                                border.width: 2
                                 clip: true
+                                color: "transparent"
 
-                                ColumnLayout {
+                                Image {
                                     anchors.fill: parent
-                                    spacing: 0
-
-                                    Image {
-                                        Layout.fillWidth: true
-                                        Layout.fillHeight: true
-                                        source: "file://" + path
-                                        fillMode: Image.PreserveAspectCrop
-                                        asynchronous: true
-                                        smooth: true
-                                        opacity: status === Image.Ready ? 1 : 0
-                                        Behavior on opacity { NumberAnimation { duration: 300 } }
-                                    }
-
-                                    Rectangle {
-                                        Layout.fillWidth: true
-                                        height: 35
-                                        color: Qt.rgba(17/255, 17/255, 27/255, 0.8) // Crust
-                                        
-                                        Text {
-                                            anchors.centerIn: parent
-                                            width: parent.width - 20
-                                            text: name
-                                            color: "#CDD6F4"
-                                            font.pixelSize: 11
-                                            elide: Text.ElideRight
-                                            horizontalAlignment: Text.AlignHCenter
-                                        }
-                                    }
+                                    source: "file://" + path
+                                    fillMode: Image.PreserveAspectCrop
+                                    asynchronous: true
+                                    smooth: true
+                                    opacity: status === Image.Ready ? 1 : 0
+                                    Behavior on opacity { NumberAnimation { duration: 300 } }
                                 }
 
                                 MouseArea {
