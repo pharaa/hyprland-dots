@@ -23,12 +23,13 @@ pacman_pkgs = [
     "ttf-jetbrains-mono-nerd",
     "noto-fonts",
     "noto-fonts-emoji",
+    "noto-fonts-cjk",
     
     # всякие хрени для настройки чего-то там
     "blueman",
     "nwg-look",
     "pavucontrol",
-    "nm-connection-editor"
+    "nm-connection-editor",
     
     # обои, панелька, уведомления, лаунчер приложений
     "awww",
@@ -57,6 +58,8 @@ pacman_pkgs = [
     "gvfs",
     "gvfs-mtp",
     "brightnessctl",
+    "gamemode",
+    "ntfs-3g",
     
     # шелл
     "zsh",
@@ -74,6 +77,7 @@ pacman_pkgs = [
     "steam",
     "discord",
     "chromium",
+    "remmina",
     "firefox",
     "telegram-desktop",
     "kiwix-desktop", # офлайн-браузер
@@ -95,7 +99,9 @@ pacman_pkgs = [
     "rust",
     "cargo",
     "docker",
-    "sqlitebrowser"
+    "sqlitebrowser",
+    "python-pillow",
+    "nlohmann-json"
     
 ]
 
