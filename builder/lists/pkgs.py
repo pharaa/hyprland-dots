@@ -24,6 +24,7 @@ pacman_pkgs = [
     "noto-fonts",
     "noto-fonts-emoji",
     "noto-fonts-cjk",
+    "noto-fonts-extra",
     
     # всякие хрени для настройки чего-то там
     "blueman",
