@@ -9,11 +9,11 @@ local browser = "chromium"
 local launcher = "prismlauncher"
 
 -- Функции
-local wallpaper = "bash /home/$USER/.extra/wallpaper_picker/wallpaper_picker.sh" -- Менюшка выбора обоев
-local screenshot = "bash /home/$USER/.config/fuzzel/screenshot.sh" -- Меню скриншота
+local wallpaper = "bash ~/.extra/wallpaper_picker/wallpaper_picker.sh" -- Менюшка выбора обоев
+local screenshot = "bash ~/.assets/scripts/screenshot.sh" -- Меню скриншота
 local quick_screenshot = "hyprshot -m region -z -o ~/Pictures/Screenshots/" -- Быстрый скриншот области
 local pick = "hyprpicker -a" -- Выбиралка цвета с экрана
-local wipe = "cliphist wipe" -- Очистка буфера
+local wipe = "bash ~/.assets/scripts/wipe_clipboard.sh" -- Очистка буфера
 
 local clipboard = "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy" -- Открывашка буфера для копирования
 
