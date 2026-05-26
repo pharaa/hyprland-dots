@@ -8,7 +8,6 @@
 
 **Панелька** Waybar<br>
 **Менеджер уведомлений** Swaync<br>
-**Менюшка для выхода из сессии** Wlogout<br>
 **Демон обоев** Awww<br>
 
 
@@ -19,7 +18,7 @@ git clone https://github.com/pharaa/hyprland-dots.git
 cd hyprland-dots
 ```
 
-Отредактируйте "config/hypr/hyprland/monitors.conf" и пропишите там свои мониторы из hyprctl monitors<br>
+Отредактируйте "config/hypr/hyprland/monitors.lua" и пропишите там свои мониторы из hyprctl monitors<br>
 
 При желании вы можете поменять аватарку на экране блокировки, переименовав картинку в .avatar и поместить её в вашу папку /home/
 
@@ -47,6 +46,7 @@ Win + Alt + P - Открыть лаунчер майнкрафта (prism)<br>
 PrintScreen - Открыть меню скриншотов<br>
 Win + PrintScreen - Быстрый скриншот области<br>
 Win + Alt + PrintScreen - Выбрать цвет с экрана<br>
+Ctrl + Alt + Del - Wlogout
 
 Win + Shift + Стрелочки - Двигать окошки
 
