@@ -31,6 +31,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
 hl.bind(mainMod .. " + ALT + PRINT", hl.dsp.exec_cmd(pick))
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd(quick_screenshot))
+hl.bind("CTRL" .. " + ALT + DELETE", hl.dsp.exec_cmd("wlogout"))
 hl.bind("PRINT", hl.dsp.exec_cmd(screenshot))
 
 hl.bind(mainMod .. " + ALT + R", hl.dsp.exec_cmd(clipboard))
