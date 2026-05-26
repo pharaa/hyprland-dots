@@ -3,6 +3,7 @@ local terminal = "alacritty"
 local fileManager = "kitty ranger"
 local menu = "fuzzel"
 
+local kew = "kitty kew"
 local nvtop = "kitty nvtop"
 local htop = "kitty htop"
 local browser = "chromium"
@@ -25,6 +26,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(htop))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(nvtop))
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(kew))
 
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
