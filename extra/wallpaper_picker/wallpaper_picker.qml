@@ -64,7 +64,7 @@ ShellRoot {
             Rectangle {
                 id: mainWindow
                 anchors.fill: parent
-                radius: 24
+                radius: 15
                 color: "#1e1e2e" // Catppuccin Mocha Base
                 border.color: "#89b4fa" // Mauve
                 border.width: 3
@@ -91,18 +91,10 @@ ShellRoot {
                         Layout.fillWidth: true
                         spacing: 20
 
-                        Text {
-                            text: "󰸉 Wallpapers"
-                            font.family: "JetBrainsMono Nerd Font"
-                            font.pixelSize: 24
-                            font.weight: Font.Bold
-                            color: "#89b4fa"
-                        }
-
                         Rectangle {
                             Layout.fillWidth: true
                             height: 48
-                            radius: 24
+                            radius: 15
                             color: Qt.rgba(1, 1, 1, 0.05)
                             border.width: 1.5
                             border.color: searchInput.activeFocus ? "#89b4fa" : Qt.rgba(1, 1, 1, 0.1)
