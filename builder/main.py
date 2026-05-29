@@ -1,7 +1,7 @@
 from funcs.install_files import *
 from funcs.install_pkgs import *
 from funcs import create_dirs
-from lists import configs, pkgs
+from lists import pkgs
 import time
 import os
 
@@ -33,25 +33,48 @@ def post_installation():
     pass
 
 if __name__ == "__main__":
-    choice = input("Вам нужны драйвера Nvidia 580xx? [y/N] > ")
-    create_dirs.create_dirs()
+    driv = input("Вам нужны драйвера Nvidia 580xx? [y/N] > ")
     
-    install_cfg()
-    install_icons()
-    install_extra()
-    install_assets()
-    install_wallpapers()
-    install_avatar()
-    
-    install_pacman_pkg(pkgs.pacman_pkgs)
-    install_yay()
-    install_yay_pkg(pkgs.aur_pkgs)
-    
-    if choice == "y" or "Y":
+    while choice != "1" or "2" or "3":
+        choice = input("Выберите что ставить:\n1. Только конфиги\n2. Только пакеты\n3. Пакеты и конфиги\n > ")
+        if choice == "1":
+            create_dirs.create_dirs()
+            
+            install_cfg()
+            install_icons()
+            install_extra()
+            install_assets()
+            install_wallpapers()
+            install_avatar()
+            configure_shell()
+        elif choice == "2":
+            print("Устанавливаем пакеты..")
+            time.sleep(3)
+            install_pacman_pkg(pkgs.pacman_pkgs)
+            install_yay()
+            install_yay_pkg(pkgs.aur_pkgs)
+        elif choice == "3":
+            create_dirs.create_dirs()
+            
+            install_cfg()
+            install_icons()
+            install_extra()
+            install_assets()
+            install_wallpapers()
+            install_avatar()
+
+            print("Устанавливаем пакеты..")
+            time.sleep(3)
+            install_pacman_pkg(pkgs.pacman_pkgs)
+            install_yay()
+            install_yay_pkg(pkgs.aur_pkgs)
+
+            configure_shell()
+            post_installation()
+        
+    if driv == "y" or "Y":
         install_yay_pkg(pkgs.ancient_drivers)
     else:
         pass
-    
-    configure_shell()
-    post_installation()
+
     print("Всё готово! Перезагрузите сессию")
