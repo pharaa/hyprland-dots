@@ -33,44 +33,56 @@ def post_installation():
     pass
 
 if __name__ == "__main__":
+    choice = 0
     driv = input("Вам нужны драйвера Nvidia 580xx? [y/N] > ")
     
-    while choice != "1" or "2" or "3":
+    while True:
         choice = input("Выберите что ставить:\n1. Только конфиги\n2. Только пакеты\n3. Пакеты и конфиги\n > ")
         if choice == "1":
-            create_dirs.create_dirs()
-            
-            install_cfg()
-            install_icons()
-            install_extra()
-            install_assets()
-            install_wallpapers()
-            install_avatar()
-            configure_shell()
+            break
         elif choice == "2":
-            print("Устанавливаем пакеты..")
-            time.sleep(3)
-            install_pacman_pkg(pkgs.pacman_pkgs)
-            install_yay()
-            install_yay_pkg(pkgs.aur_pkgs)
+            break
         elif choice == "3":
-            create_dirs.create_dirs()
+            break
+        else:
+            continue
+
+    if choice == "1":
+        create_dirs.create_dirs()
             
-            install_cfg()
-            install_icons()
-            install_extra()
-            install_assets()
-            install_wallpapers()
-            install_avatar()
+        install_cfg()
+        install_icons()
+        install_extra()
+        install_assets()
+        install_wallpapers()
+        install_avatar()
+        configure_shell()
+    elif choice == "2":
+        print("Устанавливаем пакеты..")
+        time.sleep(3)
+        install_pacman_pkg(pkgs.pacman_pkgs)
+        install_yay()
+        install_yay_pkg(pkgs.aur_pkgs)
+    elif choice == "3":
+        create_dirs.create_dirs()
+            
+        install_cfg()
+        install_icons()
+        install_extra()
+        install_assets()
+        install_wallpapers()
+        install_avatar()
+        
+        print("Устанавливаем пакеты..")
+        time.sleep(3)
+        install_pacman_pkg(pkgs.pacman_pkgs)
+        install_yay()
+        install_yay_pkg(pkgs.aur_pkgs)
 
-            print("Устанавливаем пакеты..")
-            time.sleep(3)
-            install_pacman_pkg(pkgs.pacman_pkgs)
-            install_yay()
-            install_yay_pkg(pkgs.aur_pkgs)
-
-            configure_shell()
-            post_installation()
+        configure_shell()
+        post_installation()
+    else:
+        "Выберите либо 1 либо 2 либо 3"
         
     if driv == "y" or "Y":
         install_yay_pkg(pkgs.ancient_drivers)
