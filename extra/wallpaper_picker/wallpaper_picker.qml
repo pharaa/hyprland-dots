@@ -10,6 +10,7 @@ ShellRoot {
     Variants {
         model: Quickshell.screens
 
+        // Окно
         delegate: WlrLayershell {
             id: root
             property var modelData
@@ -26,6 +27,7 @@ ShellRoot {
             property string stdoutBuffer: ""
             property string searchQuery: ""
 
+            // Получение json-данных обоев (см. get_wallpapers.py)
             Process {
                 id: getWallsProc
                 command: ["python3", "get_wallpapers.py"]
@@ -54,6 +56,7 @@ ShellRoot {
                     wallsModel.append(list[i]);
             }
 
+            // Функция установки обоев (см. set_wallpaper.sh)
             function setWallpaper(path) {
                 var proc = Qt.createQmlObject('import Quickshell.Io; Process {}', root);
                 proc.command = ["bash", "set_wallpaper.sh", path];
@@ -61,6 +64,7 @@ ShellRoot {
                 Qt.quit();
             }
 
+            // Окно
             Rectangle {
                 id: mainWindow
                 anchors.fill: parent
@@ -86,7 +90,7 @@ ShellRoot {
                     anchors.margins: 25
                     spacing: 20
 
-                    // Title and Search
+                    // Поле поиска
                     RowLayout {
                         Layout.fillWidth: true
                         spacing: 20
@@ -121,7 +125,7 @@ ShellRoot {
                         }
                     }
 
-                    // Grid
+                    // Превьюшки обоев
                     GridView {
                         id: wallsGrid
                         Layout.fillWidth: true
