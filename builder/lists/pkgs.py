@@ -80,6 +80,8 @@ pacman_pkgs = [
     "chromium",
     "remmina",
     "firefox",
+    "filezilla",
+    "qbittorrent",
     "telegram-desktop",
     "kiwix-desktop", # офлайн-браузер
     "torbrowser-launcher",
@@ -111,12 +113,13 @@ aur_pkgs = [
     "wlogout", # менюшка управления сессией
     "vscodium", # редактор
     "catppuccin-gtk-theme-mocha", # тема GTK
-    "amneziavpn-bin" # впн-клиент
+    "amneziavpn-bin", # впн-клиент
     
     # приколюхи
     "cmatrix",
     "pipes.sh",
-    "tty-clock"
+    "tty-clock",
+    "termtypist" # тренировка слепой печати
 ]
 
 # нвидиа драйвера на gtx 10 серии
