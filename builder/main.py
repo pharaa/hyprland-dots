@@ -38,11 +38,7 @@ if __name__ == "__main__":
     
     while True:
         choice = input("Выберите что ставить:\n1. Только конфиги\n2. Только пакеты\n3. Пакеты и конфиги\n > ")
-        if choice == "1":
-            break
-        elif choice == "2":
-            break
-        elif choice == "3":
+        if choice == "1" or "2" or "3":
             break
         else:
             continue
