@@ -10,6 +10,7 @@ local browser = "chromium"
 local launcher = "prismlauncher"
 
 -- Функции
+local waybar = "bash ~/.assets/scripts/toggle_waybar.sh" -- Включение/выключение waybar
 local wallpaper = "bash ~/.extra/wallpaper_picker/wallpaper_picker.sh" -- Менюшка выбора обоев
 local screenshot = "bash ~/.assets/scripts/screenshot.sh" -- Меню скриншота
 local quick_screenshot = "hyprshot -m region -z -o ~/Pictures/Screenshots/" -- Быстрый скриншот области
@@ -31,6 +32,7 @@ hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(kew))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
+hl.bind("CTRL" .. " + ALT + W", hl.dsp.exec_cmd(waybar))
 hl.bind(mainMod .. " + ALT + PRINT", hl.dsp.exec_cmd(pick))
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd(quick_screenshot))
 hl.bind("CTRL" .. " + ALT + DELETE", hl.dsp.exec_cmd("wlogout"))
