@@ -147,8 +147,6 @@ ShellRoot {
                                 anchors.margins: 8
                                 Layout.fillWidth: true
                                 Layout.fillHeight: true
-                                radius: 15
-                                clip: true
                                 color: "transparent"
 
                                 Image {
