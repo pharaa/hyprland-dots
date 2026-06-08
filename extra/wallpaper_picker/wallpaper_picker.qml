@@ -69,8 +69,8 @@ ShellRoot {
                 id: mainWindow
                 anchors.fill: parent
                 radius: 15
-                color: "#1e1e2e" // Catppuccin Mocha Base
-                border.color: "#89b4fa" // Mauve
+                color: "#1e1e2e"
+                border.color: "#89b4fa"
                 border.width: 3
                 clip: true
                 
