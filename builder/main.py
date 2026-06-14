@@ -29,7 +29,20 @@ def configure_shell():
     pass
 
 def post_installation():
-    os.system("chmod +x /home/$USER/.config/fuzzel/screenshot.sh")
+    scripts = [
+        "screenshot.sh",
+        "wipe_clipboard.sh",
+        "toggle_waybar.sh",
+        "switch_workspace.sh"
+    ]
+    print("Добавляем права запуска для скриптов")
+    for script in scripts:
+        os.system(f"chmod +x /home/$USER/.assets/scripts/{script}")
+    
+    print("Добавляем пользователя в группу input")
+    os.system("sudo usermod -aG input $USER")
+    print("Добавляем пользователя в группу gamemode")
+    os.system("sudo usermod -aG gamemode $USER")
     pass
 
 if __name__ == "__main__":
