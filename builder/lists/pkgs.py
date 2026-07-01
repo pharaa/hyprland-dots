@@ -89,6 +89,7 @@ pacman_pkgs = [
     "prismlauncher",
     "obs-studio",
     "nemo",
+    "engrampa",
     
     # для разрабов
     "gcc",
@@ -114,6 +115,8 @@ aur_pkgs = [
     "vscodium", # редактор
     "catppuccin-gtk-theme-mocha", # тема GTK
     "amneziavpn-bin", # впн-клиент
+    "etcher-cli-bin",
+    "ffmulticonverter", # конвертер (ПЕРЕСТАНЬТЕ ИСПОЛЬЗОВАТЬ ОНЛАЙН КОНВЕРТЕРЫ С ОГРАНИЧЕНИЕМ РАЗМЕРА ФАЙЛА И ПЕРЕСТАНЬТЕ КОРМИТЬ ВАЙБКОДЕРОВ)
     
     # приколюхи
     "cmatrix",
